@@ -1,18 +1,33 @@
 ---
-import Tecnologies from "./tecnologies.astro";
+import Tecnologies from "./tecnologies.astro"
+
+interface Tecnologie {
+    url: string
+    alt: string
+}
+
+interface Props {
+    title: string
+    descp: string
+    techs: Array<Tecnologie>,
+    code: string
+    demo: string
+}
+
+const {  code, demo, descp, techs, title  } = Astro.props
 
 ---
 
 <article>
     <header>
-
+        {title}
     </header>
     <p>
-
+        {descp}
     </p>
-    <Tecnologies />
+    <Tecnologies tecnologies={techs}  />
     <div>
-        <button>Código</button>
-        <button>Demo</button>
+        <a href={code} >Código</a>
+        <a href={demo} >Demo</a>
     </div>
 </article>

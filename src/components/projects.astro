@@ -1,12 +1,48 @@
 ---
+import ItemProject from "./itemProject.astro";
 
-
+const mockData = [
+    {
+        title: "",
+        descp: "",
+        techs: [{ url: "", alt: "" }],
+        code: "",
+        demo: ""
+    },
+    {
+        title: "",
+        descp: "",
+        techs: [{ url: "", alt: "" }],
+        code: "",
+        demo: ""
+    },
+    {
+        title: "",
+        descp: "",
+        techs: [{ url: "", alt: "" }],
+        code: "",
+        demo: ""
+    },
+    {
+        title: "",
+        descp: "",
+        techs: [{ url: "", alt: "" }],
+        code: "",
+        demo: ""
+    }
+]
 ---
 
 <section>
     <h2> Proyectos </h2>
     <section>
-
+        {
+            mockData.map( project => (
+                <ItemProject
+                    {...project}
+                />
+            ))
+        }
     </section>
 </section>
 

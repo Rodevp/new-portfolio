@@ -1,9 +1,15 @@
 ---
 
+const {  tecnologies } = Astro.props
+
 ---
 
 <div>
-    <picture>
-        <img src="" width="25" height="25" alt="">
-    </picture>
+    {
+        tecnologies.map( ( tecnologie: any ) => (
+            <picture>
+                <img  src={tecnologie.url} alt={tecnologie.alt} />    
+            </picture>
+        ))
+    }
 </div>
