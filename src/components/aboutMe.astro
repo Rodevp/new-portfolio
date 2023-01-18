@@ -5,9 +5,13 @@
 ---
 
 <section class="about_me">
-    <Avatar />
-    <Title />
-    <Description />
+    <div class="content_avatar">
+        <Avatar />
+    </div>
+    <div class="content_me">
+        <Title />
+        <Description />
+    </div>
 </section>
 
 <style> 
@@ -23,6 +27,26 @@
             padding: 2rem;
         }
     }
+    
 
+    @media screen and (min-width: 1020px) {
+
+        .about_me {
+            display: flex;
+        }
+        
+        .content_avatar {
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+
+        .content_me {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
 
 </style>
+
