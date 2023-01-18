@@ -1,33 +1,118 @@
 ---
-import Tecnologies from "./tecnologies.astro"
+import Tecnologies from "./tecnologies.astro";
 
 interface Tecnologie {
-    url: string
-    alt: string
+    url: string;
+    alt: string;
 }
 
 interface Props {
-    title: string
-    descp: string
-    techs: Array<Tecnologie>,
-    code: string
-    demo: string
+    title: string;
+    descp: string;
+    techs: Array<Tecnologie>;
+    code: string;
+    demo: string;
 }
 
-const {  code, demo, descp, techs, title  } = Astro.props
-
+const { code, demo, descp, techs, title } = Astro.props;
 ---
 
-<article>
-    <header>
+<article class="card">
+    <h3>
         {title}
-    </header>
+    </h3>
     <p>
         {descp}
     </p>
-    <Tecnologies tecnologies={techs}  />
+    <Tecnologies tecnologies={techs} />
     <div>
-        <a href={code} >Código</a>
-        <a href={demo} >Demo</a>
+        <a class="button">
+            Código
+        </a>
+        <a class="button">
+            Demo
+        </a>
     </div>
 </article>
+
+<style>
+    .card {
+        padding: 1rem;
+        border-radius: 0.25rem;
+    }
+
+    .card h3 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    .card p {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .card div {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .button {
+        --color: #00a97f;
+        margin-right: 10px;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.5s;
+        font-weight: 400;
+        font-size: 1rem;
+        border: 1px solid;
+        z-index: 1;
+        background-color: transparent;
+        color: var(--color);
+    }
+
+    .button::before,
+    .button::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--color);
+        transition: 1s ease;
+    }
+
+    .button::before {
+        top: -1em;
+        left: -1em;
+    }
+
+    .button::after {
+        left: calc(100% + 1em);
+        top: calc(100% + 1em);
+    }
+
+    .button:hover::before,
+    .button:hover::after {
+        height: 410px;
+        width: 410px;
+    }
+
+    .button:hover {
+        color: rgb(10, 25, 30);
+    }
+
+    .button:active {
+        filter: brightness(0.8);
+    }
+
+</style>
