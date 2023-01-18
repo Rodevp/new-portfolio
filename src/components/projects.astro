@@ -55,6 +55,8 @@ const mockData = [
     }
 
     .projects h2 {
+        width: 100%;
+        padding-left: 1.5rem;
         font-weight: 800;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -64,6 +66,14 @@ const mockData = [
     .projects section {
         display: flex;
         flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+        .projects section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
     }
 
 </style>
