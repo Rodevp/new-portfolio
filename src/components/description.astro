@@ -1,10 +1,13 @@
+---
+import { COLORS } from "../utils/colors";
+---
+
 <section class="content_desc">
     <p>
-        +1 año y medio de experiencia desarrollando aplicaciones con Javascript, React
+        <span style={`color: ${COLORS.blueSky}`}>+1 año</span> y medio de experiencia desarrollando aplicaciones móviles y web usando React
         js y Ract Native. He colaborado en diferentes comunidades enseñando
-        temas relacionados con Javascript, me gusta apoyar a cualquier equipo
-        donde trabaje aportando ideas y buenas prácticas para el desarrollo del
-        producto final.
+        temas relacionados con el desarrollo móvil. Soy aficionado a las ciencias, deportes y 
+        videojuegos.
     </p>
 </section>
 
@@ -20,6 +23,10 @@
         font-weight: 300;
         font-size: 1rem;
         line-height: 1.5rem;
+    }
+
+    .content_desc p > span {
+        font-weight: 700;
     }
 
     @media screen and (min-width: 768px) {
