@@ -21,11 +21,19 @@
     .socials {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
     }
 
     .content_svg {
         width: 30px;
         height: 30px;
     }
+
+    @media screen and (min-width: 1020px) {
+        .socials {
+            justify-content: flex-end;
+        }
+    }
+
 </style>
