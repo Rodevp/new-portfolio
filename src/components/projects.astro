@@ -1,5 +1,6 @@
 ---
 import ItemProject from "./itemProject.astro";
+import Subtitle from "./subtitle.astro";
 
 const mockData = [
     {
@@ -34,7 +35,9 @@ const mockData = [
 ---
 
 <section class="projects">
-    <h2>💻 Proyectos </h2>
+    <Subtitle
+        text="💻 Proyectos"
+    />
     <section>
         {
             mockData.map( project => (
