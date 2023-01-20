@@ -1,9 +1,15 @@
 ---
-import Profile from "../assets/perfil.jpg"
+    interface Props {
+        url: string
+        alt: string
+    }
+
+    const { url, alt } = Astro.props
+
 ---
 
 <picture  class="picture">
-    <img   src={Profile}  alt="my photo"  loading="lazy"  />
+    <img   src={url}  alt={alt}  loading="lazy"  />
 </picture>
 
 <style>
@@ -18,6 +24,6 @@ import Profile from "../assets/perfil.jpg"
 
     .picture img {
         border-radius: 9999px;
-
+    }
 
 </style>
