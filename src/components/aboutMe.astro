@@ -1,52 +1,8 @@
 ---
-    import Avatar from "./avatar.astro"
-    import Title from "./title.astro"
-    import Description from "./description.astro"
 ---
-
 <section class="about_me">
-    <div class="content_avatar">
-        <Avatar />
-    </div>
-    <div class="content_me">
-        <Title />
-        <Description />
-    </div>
 </section>
 
 <style> 
-
-    @media screen and (min-width: 768px) {
-        .about_me {
-            padding: 1.5rem;
-        }
-    }
-
-    @media screen and (min-width: 920px) {
-        .about_me {
-            padding: 2rem;
-        }
-    }
-    
-
-    @media screen and (min-width: 1020px) {
-
-        .about_me {
-            display: flex;
-        }
-        
-        .content_avatar {
-            width: 20%;
-            display: flex;
-            align-items: center;
-        }
-
-        .content_me {
-            width: 80%;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
 </style>
 

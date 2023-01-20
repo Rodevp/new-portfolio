@@ -1,24 +1,9 @@
 ---
-import AboutMe from "./aboutMe.astro"
-import Footer from "./footer.astro";
-import Projects from "./projects.astro";
 import { COLORS } from "../utils/colors.js"
-
 ---
 
 <div class="container"  style={`background-color: ${COLORS.white};`} >
-    <main>
-        <AboutMe />
-        <Projects />
-    </main>
-    <Footer />
 </div>
 
 <style >
-    .container {
-        width: 100%;
-        min-height: 100vh;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
 </style>

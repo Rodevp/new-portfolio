@@ -1,6 +1,4 @@
 ---
-import Tecnologies from "./tecnologies.astro";
-
 interface Tecnologie {
     url: string;
     alt: string;
@@ -24,111 +22,8 @@ const { code, demo, descp, techs, title } = Astro.props;
     <p>
         {descp}
     </p>
-    <Tecnologies tecnologies={techs} />
-    <div>
-        <a class="button">
-            Código
-        </a>
-        <a class="button">
-            Demo
-        </a>
-    </div>
 </article>
 
 <style>
-    .card {
-        width: 100%;
-        border-radius: 0.25rem;
-        margin-bottom: 1.5rem;
-        padding: 1rem;
-        box-shadow: rgba(66, 72, 116, 0.1) 0px 0px 0px 1px;
-    }
-
-    .card h3 {
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-    }
-
-    .card p {
-        font-weight: 300;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-top: 0.75rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .card div {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .button {
-        --color: rgb(66, 72, 116);
-        margin-right: 10px;
-        padding: 0.5rem 1rem;
-        border-radius: 0.3rem;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        transition: 0.5s;
-        font-weight: 400;
-        font-size: 1rem;
-        z-index: 1;
-        background-color: transparent;
-        color: var(--color);
-    }
-
-    .button::before,
-    .button::after {
-        content: "";
-        display: block;
-        width: 50px;
-        height: 50px;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        border-radius: 50%;
-        z-index: -1;
-        background-color: var(--color);
-        transition: 1s ease;
-    }
-
-    .button::before {
-        top: -1em;
-        left: -1em;
-    }
-
-    .button::after {
-        left: calc(100% + 1em);
-        top: calc(100% + 1em);
-    }
-
-    .button:hover::before,
-    .button:hover::after {
-        height: 410px;
-        width: 410px;
-    }
-
-    .button:hover {
-        color: rgb(244, 238, 255);
-    }
-
-    .button:active {
-        filter: brightness(0.8);
-    }
-
-    @media screen and (min-width: 768px) {
-        .card {
-            width: 45%;
-            margin-right: 2rem;
-        }
-    }
-
-    @media screen and (min-width: 928px) {
-        .card {
-            width: 48%;
-            margin-right: 0.8rem;
-        }
-    }
 
 </style>
