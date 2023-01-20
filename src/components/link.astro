@@ -1,0 +1,15 @@
+---
+interface Props {
+    url: string
+    content: any
+}
+
+const { url, content } = Astro.props
+
+---
+
+<a href={url} target="_blank" >{content}</a>
+
+<style>
+    
+</style>

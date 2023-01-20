@@ -1,0 +1,18 @@
+---
+interface Props {
+    text: string
+    action: Function
+}
+
+const { text, action } = Astro.props
+
+---
+
+<button
+    onclick={`${action}`}
+>
+    {text}
+</button>
+
+<style>
+</style>
