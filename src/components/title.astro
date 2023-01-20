@@ -1,13 +1,14 @@
 ---
-    import Socials from "./socials.astro";
+
+    interface Props {
+        title: string
+    }
+
+    const { title } = Astro.props
 ---
 
 <section class="content_title">
-    <h1>Rodrigo Rodriguez</h1>
-    <h3>
-        <span>React Native</span> developer
-    </h3>
-    <Socials />
+    <h1>{title}</h1>
 </section>
 
 <style> 
