@@ -1,7 +1,7 @@
 import styles from "./project.module.css"
 import { COLORS } from "../colors"
 
-function CardProject({ title, teconologies, urls}) {
+function CardProject({ title, teconologies, urls }) {
     return (
         <div
             className={styles.cardBackground}
@@ -28,8 +28,8 @@ function CardProject({ title, teconologies, urls}) {
                         style={{ color: COLORS.white, backgroundColor: COLORS.gray }}
                         target="_blank"
                     >
-                            Código
-                        </a>
+                        Código
+                    </a>
                     <a
                         href={urls.demo}
                         className={styles.btn}
@@ -78,23 +78,27 @@ function Project() {
     ]
 
 
-  return (
-    <section
-        className={styles.section}
-    >
-        <h2
-            className={styles.title}
-            style={{ color: COLORS.purpleVeryLight }}
+    return (
+        <section
+            className={styles.section}
         >
-            Proyectos
-        </h2>
-        {
-            projects.map( project => {
-                return <CardProject  key={project.id} {...project} />
-            })
-        }
-    </section>
-  )
+            <h2
+                className={styles.title}
+                style={{ color: COLORS.purpleVeryLight }}
+            >
+                Proyectos
+            </h2>
+            <div
+                className={styles.projects}
+            >
+                {
+                    projects.map(project => {
+                        return <CardProject key={project.id} {...project} />
+                    })
+                }
+            </div>
+        </section>
+    )
 }
 
 export default Project
