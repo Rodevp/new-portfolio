@@ -1,4 +1,5 @@
 import styles from "./hero.module.css"
+import Avatar from "../components/avatar/Avatar"
 import { COLORS } from "../colors"
 
 
@@ -7,18 +8,27 @@ function Hero() {
         <section
             className={styles.section}
         >
-            <h1
-                className={styles.title}
-                style={{ color: COLORS.purpleVeryLight }}
+            <div
+                className={styles.itemOne}
             >
-                Rodrigo Rodriguez
-            </h1>
-            <p
-                className={styles.p}
-                style={{ color: COLORS.purpleVeryLight }}
+                <h1
+                    className={styles.title}
+                    style={{ color: COLORS.purpleVeryLight }}
+                >
+                    Rodrigo Rodriguez
+                </h1>
+                <p
+                    className={styles.p}
+                    style={{ color: COLORS.purpleVeryLight }}
+                >
+                    Desarrollador Front-End. React js/React Native
+                </p>
+            </div>
+            <div
+                className={styles.contentAvatar}
             >
-                Desarrollador Front-End. React js/React Native
-            </p>
+                <Avatar />
+            </div>
         </section>
     )
 }

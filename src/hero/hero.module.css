@@ -3,6 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    display: flex;
 }
 
 .title {
@@ -12,4 +13,37 @@
 
 .p {
     font-size: 1rem;
+}
+
+.itemOne {
+    width: 100%;
+}
+
+.contentAvatar {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .section {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .itemOne {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contentAvatar {
+        display: block;
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
