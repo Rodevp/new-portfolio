@@ -11,6 +11,7 @@ function Avatar() {
             src={ProfileImage}
             alt="my personal photo"
             className={styles.image}
+            loading="lazy"
         />
     </div>
   )
