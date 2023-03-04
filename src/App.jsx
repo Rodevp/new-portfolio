@@ -1,3 +1,4 @@
+import About from "./about/About"
 import Header from "./header/Header"
 import Hero from "./hero/Hero"
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <About />
     </>
   )
 }

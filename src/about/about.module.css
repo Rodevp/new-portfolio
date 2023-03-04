@@ -1,0 +1,15 @@
+.section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.me {
+    font-size: 1.1rem;
+}
