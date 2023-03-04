@@ -19,3 +19,9 @@
         width: 80%;
     }
 }
+
+@media screen and (min-width: 1020px) {
+    .footer {
+        width: 60%;
+    }
+}

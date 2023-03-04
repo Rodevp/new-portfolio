@@ -19,3 +19,10 @@
         width: 80%;
     }
 }
+
+@media screen and (min-width: 1020px) {
+    .section {
+        width: 60%;
+        margin-bottom: 4rem;
+    }
+}

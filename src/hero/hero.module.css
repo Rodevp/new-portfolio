@@ -26,7 +26,6 @@
 @media screen and (min-width: 768px) {
 
     .section {
-        width: 80%;
         margin-bottom: 3rem;
     }
 
@@ -46,5 +45,22 @@
         width: 30%;
         display: flex;
         justify-content: flex-end;
+    }
+}
+
+
+@media screen and (min-width: 920px) {
+
+    .section {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+    .section {
+        width: 60%;
+        margin-bottom: 3rem;
     }
 }

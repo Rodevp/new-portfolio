@@ -23,5 +23,12 @@
 @media screen and (min-width: 920px) {
     .header {
         width: 80%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .header {
+        width: 60%;
     }
 }
