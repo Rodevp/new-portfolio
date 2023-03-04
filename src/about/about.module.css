@@ -13,3 +13,9 @@
 .me {
     font-size: 1.1rem;
 }
+
+@media screen and (min-width: 920px) {
+    .section {
+        width: 80%;
+    }
+}

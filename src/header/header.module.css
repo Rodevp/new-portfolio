@@ -19,3 +19,9 @@
     border-radius: 5px;
     font-size: 1rem;
 }
+
+@media screen and (min-width: 920px) {
+    .header {
+        width: 80%;
+    }
+}
