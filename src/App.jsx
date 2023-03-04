@@ -1,10 +1,10 @@
-import Avatar from "./components/avatar/Avatar"
+import Header from "./header/Header"
 
 function App() {
 
   return (
     <>
-      <Avatar />
+      <Header />
     </>
   )
 }

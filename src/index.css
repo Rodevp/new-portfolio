@@ -1,5 +1,15 @@
+@font-face {
+    font-family: "lato";
+    src: url("./font/LatoRegular.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "lato";
+}
+
+html {
+ background-color: #111010;   
 }
