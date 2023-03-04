@@ -1,0 +1,16 @@
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(337deg, rgba(173,123,233,1) 0%, rgba(255,141,93,1) 100%);
+}
+
+.image {
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+    filter: grayscale(90%);
+}
