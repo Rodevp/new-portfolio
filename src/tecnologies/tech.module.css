@@ -1,0 +1,66 @@
+.section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contentTech {
+    display: flex;
+    flex-direction: column;
+}
+
+.tecnologie {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.tecnologieImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+.titleTecnologie {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 620px) {
+    .contentTech {
+        flex-direction: row;
+    }
+
+    .tools, .others {
+        margin-left: 4rem;
+    }
+
+}
+
+@media screen and (min-width: 920px) {
+    .section {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .tools, .others {
+        margin-left: 6rem;
+    }
+
+}
+
+@media screen and (min-width: 1020px) {
+    .section {
+        width: 60%;
+    }
+
+    .tools, .others {
+        margin-left: 8rem;
+    }
+}
