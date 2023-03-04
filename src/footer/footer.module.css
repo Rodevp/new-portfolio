@@ -1,0 +1,15 @@
+.footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.footerItem {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.link {
+    text-decoration: none;
+}
