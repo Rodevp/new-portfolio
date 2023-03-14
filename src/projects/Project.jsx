@@ -3,25 +3,25 @@ import { COLORS } from "../colors"
 
 function CardProject({ title, teconologies, urls }) {
     return (
-        <div
+        <article
             className={styles.cardBackground}
         >
             <div
                 className={styles.card}
             >
-                <h3
+                <header
                     className={styles.titleCard}
                     style={{ color: COLORS.purpleVeryLight }}
                 >
                     {title}
-                </h3>
+                </header>
                 <p
                     className={styles.tech}
                     style={{ color: COLORS.purpleVeryLight }}
                 >
                     {teconologies}
                 </p>
-                <div>
+                <footer>
                     <a
                         href={urls.github}
                         className={styles.btn}
@@ -38,9 +38,9 @@ function CardProject({ title, teconologies, urls }) {
                     >
                         Demo
                     </a>
-                </div>
+                </footer>
             </div>
-        </div>
+        </article>
     )
 }
 
