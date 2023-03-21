@@ -4,7 +4,6 @@ import ReactLogo from "../assets/react_logo.svg"
 import ReactNTLogo from "../assets/react_native_logo.svg"
 import JSLogo from "../assets/js_logo.svg"
 import TSLOGO from "../assets/typescript_logo.svg"
-import ReactQuery from "../assets/react_query_logo.svg"
 import SupabaseLogo from "../assets/supabase_logo.svg"
 import ViteLogo from "../assets/vitejs_logo.svg"
 import GitLogo from "../assets/git_logo.svg"
@@ -54,7 +53,6 @@ function Tech() {
                 <Tecnologie img={ReactNTLogo} name="React Native" />
                 <Tecnologie img={JSLogo} name="Javascript" />
                 <Tecnologie img={TSLOGO} name="TypeScript" />
-                <Tecnologie img={ReactQuery} name="React Query" />
             </div>
             <div className={styles.tools}>
                 <h3

@@ -18,8 +18,7 @@ function About() {
             >
                 Desarrollador con experiencia en 
                 desarrollo de software. Me especializo en construir aplicaciones móviles con React Native y web con React js.
-                Me gusta experimentar y aprender sobre temas y buenas prácticas para construir aplicaciones de gran escala.
-                Ven y construyamos tu proximo gran proyecto. 🤟
+                Me gusta experimentar y aprender sobre temas y buenas prácticas para construir aplicaciones de gran escala. 🤟
             </p>
         </section>
     )

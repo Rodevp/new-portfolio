@@ -13,13 +13,6 @@ function Header() {
             >
                 Inicio
             </a>
-            <a
-                className={styles.itemMenu}
-                href=""
-                style={{ backgroundColor: COLORS.gray, color: COLORS.white }}
-            >
-                Proyectos
-            </a>
         </header>
     )
 }
