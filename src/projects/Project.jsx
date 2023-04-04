@@ -1,7 +1,7 @@
 import styles from "./project.module.css"
 import { COLORS } from "../colors"
 
-function CardProject({ title, teconologies, urls }) {
+function CardProject({ title, description, urls }) {
     return (
         <article
             className={styles.cardBackground}
@@ -19,13 +19,13 @@ function CardProject({ title, teconologies, urls }) {
                     className={styles.tech}
                     style={{ color: COLORS.purpleVeryLight }}
                 >
-                    {teconologies}
+                    {description}
                 </p>
                 <footer>
                     <a
                         href={urls.github}
                         className={styles.btn}
-                        style={{ color: COLORS.white, backgroundColor: COLORS.gray }}
+                        style={{ color: COLORS.white }}
                         target="_blank"
                     >
                         Código
@@ -33,7 +33,7 @@ function CardProject({ title, teconologies, urls }) {
                     <a
                         href={urls.demo}
                         className={styles.btn}
-                        style={{ color: COLORS.white, backgroundColor: COLORS.gray }}
+                        style={{ color: COLORS.white }}
                         target="_blank"
                     >
                         Demo
@@ -51,7 +51,7 @@ function Project() {
         {
             id: 0,
             title: "Disney plus clone",
-            teconologies: "React js, Styled Component",
+            description: "React js, Styled Component",
             urls: {
                 github: "",
                 demo: ""
@@ -60,7 +60,7 @@ function Project() {
         {
             id: 1,
             title: "Disney plus clone",
-            teconologies: "React js, Styled Component",
+            description: "React js, Styled Component",
             urls: {
                 github: "",
                 demo: ""
@@ -69,7 +69,7 @@ function Project() {
         {
             id: 2,
             title: "Disney plus clone",
-            teconologies: "React js, Styled Component",
+            description: "React js, Styled Component",
             urls: {
                 github: "",
                 demo: ""
