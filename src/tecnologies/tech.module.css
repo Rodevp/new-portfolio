@@ -17,6 +17,7 @@
 
 .tecnologie {
     display: flex;
+    align-items: center;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
 }
@@ -24,12 +25,21 @@
 .tecnologieImage {
     width: 20px;
     height: 20px;
-    margin-right: 1rem;
 }
 
 .titleTecnologie {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
+}
+
+.contentLogoTech {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 @media screen and (min-width: 620px) {

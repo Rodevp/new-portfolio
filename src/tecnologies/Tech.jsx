@@ -9,75 +9,82 @@ import PyLogo from "../assets/python_logo.svg"
 import AstroLogo from "../assets/astro_logo.svg"
 import NextLogo from "../assets/nextjs_logo.svg"
 
-function Tecnologie ({ img, name }) {
+function Tecnologie({ img, name }) {
     return (
-        <p
+        <section
             className={styles.tecnologie}
             style={{ color: COLORS.purpleVeryLight }}
         >
-            <img
-                className={styles.tecnologieImage}
-                src={img}
-                alt={`logo ${name}`}
-                height={20}
-                width={20}
-                fetchpriority="high"
-            />
-            {name}
-        </p>
+            <div
+                className={styles.contentLogoTech}
+                style={{
+                    backgroundColor: COLORS.gray
+                }}
+            >
+                <img
+                    className={styles.tecnologieImage}
+                    src={img}
+                    alt={`logo ${name}`}
+                    height={25}
+                    width={25}
+                    fetchpriority="high"
+                />
+            </div>
+            <p>{name}</p>
+        </section>
     )
 }
 
 
 function Tech() {
-  return (
-    <section
-        className={styles.section}
-    >
-        <h2
-            className={styles.title}
-            style={{ color: COLORS.purpleVeryLight }}
+    return (
+        <section
+            className={styles.section}
         >
-            Tecnologias
-        </h2>
-        <div
-            className={styles.contentTech}
-        >
-            <div>
-                <h3
-                    className={styles.titleTecnologie}
-                    style={{ color: COLORS.purpleVeryLight }}
-                >
-                    Principales
-                </h3>
-                <Tecnologie img={ReactLogo} name="React js" />
-                <Tecnologie img={TSLOGO} name="TypeScript" />
-                <Tecnologie img={NextLogo} name="Next Js" />
+            <h2
+                className={styles.title}
+                style={{ color: COLORS.purpleVeryLight }}
+            >
+                Tecnologias
+            </h2>
+            <div
+                className={styles.contentTech}
+            >
+                <div>
+                    <h3
+                        className={styles.titleTecnologie}
+                        style={{ color: COLORS.purpleVeryLight }}
+                    >
+                        Principales
+                    </h3>
+                    <Tecnologie img={ReactLogo} name="React js" />
+                    <Tecnologie img={TSLOGO} name="TypeScript" />
+                    <Tecnologie img={NextLogo} name="Next Js" />
+                </div>
+                <div className={styles.tools}>
+                    <h3
+                        className={styles.titleTecnologie}
+                        style={{ color: COLORS.purpleVeryLight }}
+                    >
+                        Herramientas
+                    </h3>
+                    <Tecnologie img={GitLogo} name="Git" />
+                    <Tecnologie img={ViteLogo} name="Vite js" />
+                </div>
+                <div className={styles.others}>
+                    <h3
+                        className={styles.titleTecnologie}
+                        style={{ color: COLORS.purpleVeryLight }}
+                    >
+                        Otras
+                    </h3>
+                    <Tecnologie img={PyLogo} name="Python" />
+                    <Tecnologie img={AstroLogo} name="Astro js" />
+                    <Tecnologie img={ReactNTLogo} name="React Native" />
+                </div>
             </div>
-            <div className={styles.tools}>
-                <h3
-                    className={styles.titleTecnologie}
-                    style={{ color: COLORS.purpleVeryLight }}
-                >
-                    Herramientas
-                </h3>
-                <Tecnologie img={GitLogo} name="Git" />
-                <Tecnologie img={ViteLogo} name="Vite js" />
-            </div>
-            <div className={styles.others}>
-                <h3
-                    className={styles.titleTecnologie}
-                    style={{ color: COLORS.purpleVeryLight }}
-                >
-                    Otras
-                </h3>
-                <Tecnologie img={PyLogo} name="Python" />
-                <Tecnologie img={AstroLogo} name="Astro js" />
-                <Tecnologie img={ReactNTLogo} name="React Native" />
-            </div>
-        </div>
-    </section>
-  )
+        </section>
+    )
 }
 
 export default Tech
