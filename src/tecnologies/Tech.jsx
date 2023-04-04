@@ -2,13 +2,12 @@ import styles from "./tech.module.css"
 import { COLORS } from "../colors"
 import ReactLogo from "../assets/react_logo.svg"
 import ReactNTLogo from "../assets/react_native_logo.svg"
-import JSLogo from "../assets/js_logo.svg"
 import TSLOGO from "../assets/typescript_logo.svg"
-import SupabaseLogo from "../assets/supabase_logo.svg"
 import ViteLogo from "../assets/vitejs_logo.svg"
 import GitLogo from "../assets/git_logo.svg"
 import PyLogo from "../assets/python_logo.svg"
 import AstroLogo from "../assets/astro_logo.svg"
+import NextLogo from "../assets/nextjs_logo.svg"
 
 function Tecnologie ({ img, name }) {
     return (
@@ -50,9 +49,8 @@ function Tech() {
                     Principales
                 </h3>
                 <Tecnologie img={ReactLogo} name="React js" />
-                <Tecnologie img={ReactNTLogo} name="React Native" />
-                <Tecnologie img={JSLogo} name="Javascript" />
                 <Tecnologie img={TSLOGO} name="TypeScript" />
+                <Tecnologie img={NextLogo} name="Next Js" />
             </div>
             <div className={styles.tools}>
                 <h3
@@ -63,7 +61,6 @@ function Tech() {
                 </h3>
                 <Tecnologie img={GitLogo} name="Git" />
                 <Tecnologie img={ViteLogo} name="Vite js" />
-                <Tecnologie img={SupabaseLogo} name="Supabase" />
             </div>
             <div className={styles.others}>
                 <h3
@@ -74,6 +71,7 @@ function Tech() {
                 </h3>
                 <Tecnologie img={PyLogo} name="Python" />
                 <Tecnologie img={AstroLogo} name="Astro js" />
+                <Tecnologie img={ReactNTLogo} name="React Native" />
             </div>
         </div>
     </section>
