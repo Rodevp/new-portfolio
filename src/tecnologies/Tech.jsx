@@ -19,7 +19,9 @@ function Tecnologie ({ img, name }) {
                 className={styles.tecnologieImage}
                 src={img}
                 alt={`logo ${name}`}
-                loading="lazy"
+                height={20}
+                width={20}
+                fetchpriority="high"
             />
             {name}
         </p>
