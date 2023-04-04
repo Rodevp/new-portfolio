@@ -1,5 +1,6 @@
 import styles from "./project.module.css"
 import { COLORS } from "../colors"
+import Arrow from "../assets/arrow_right.svg"
 
 function CardProject({ title, description, urls }) {
     return (
@@ -28,7 +29,19 @@ function CardProject({ title, description, urls }) {
                         style={{ color: COLORS.white }}
                         target="_blank"
                     >
-                        Código
+                        <p>
+                            <span>
+                                Código
+                            </span>
+                            <span>
+                                <img
+                                    src={Arrow}
+                                    loading="lazy"
+                                    height={20}
+                                    width={20}
+                                />
+                            </span>
+                        </p>
                     </a>
                     <a
                         href={urls.demo}
@@ -36,7 +49,19 @@ function CardProject({ title, description, urls }) {
                         style={{ color: COLORS.white }}
                         target="_blank"
                     >
-                        Demo
+                         <p>
+                            <span>
+                                Demo
+                            </span>
+                            <span>
+                                <img
+                                    src={Arrow}
+                                    loading="lazy"
+                                    height={20}
+                                    width={20}
+                                />
+                            </span>
+                        </p>
                     </a>
                 </footer>
             </div>

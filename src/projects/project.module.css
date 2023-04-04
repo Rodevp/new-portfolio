@@ -14,29 +14,29 @@
 .cardBackground {
     width: 100%;
     margin-bottom: 1rem;
-    padding: 1px;
+    padding: 2px 1px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    background: linear-gradient(337deg, rgba(173,123,233,1) 0%, rgba(236,242,255,1) 100%);
+    background-color: rgba(236,242,255,1);
 }
 
 .card {
     width: 100%;
-    height: 100%;
     border-radius: 5px;
     background-color: #111010;
 }
 
 .titleCard {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding:  0.5rem;
 }
 
 .tech {
     font-size: 1rem;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -47,6 +47,14 @@
     padding-bottom: .5rem;
     text-decoration: none;
     font-size: 1rem;
+}
+
+.btn > p {
+    display: flex;
+}
+
+.btn > p > span {
+    margin-right: .2rem;
 }
 
 .btn::after {
