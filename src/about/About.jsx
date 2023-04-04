@@ -16,8 +16,7 @@ function About() {
                 className={styles.me}
                 style={{color: COLORS.purpleVeryLight}}
             >
-                Desarrollador con experiencia en 
-                desarrollo de software. Me especializo en construir aplicaciones móviles con React Native y web con React js.
+                +1 año de experiencia construyendo aplicaciones web con React js, Next js y Node js.
                 Me gusta experimentar y aprender sobre temas y buenas prácticas para construir aplicaciones de gran escala. 🤟
             </p>
         </section>
