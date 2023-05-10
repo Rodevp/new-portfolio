@@ -75,29 +75,11 @@ function Project() {
     const projects = [
         {
             id: 0,
-            title: "Disney plus clone",
-            description: "React js, Styled Component",
+            title: "Dolar hoy",
+            description: "Aplicación para ver la paridad del dolar y peso COP",
             urls: {
-                github: "",
-                demo: ""
-            }
-        },
-        {
-            id: 1,
-            title: "Disney plus clone",
-            description: "React js, Styled Component",
-            urls: {
-                github: "",
-                demo: ""
-            }
-        },
-        {
-            id: 2,
-            title: "Disney plus clone",
-            description: "React js, Styled Component",
-            urls: {
-                github: "",
-                demo: ""
+                github: "https://github.com/Rodevp/dollar-evaluate",
+                demo: "https://dollar-evaluate.vercel.app/"
             }
         }
     ]

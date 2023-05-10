@@ -21,7 +21,7 @@ function Hero() {
                     className={styles.p}
                     style={{ color: COLORS.purpleVeryLight }}
                 >
-                    Desarrollador FullStack. React js/Node js 
+                    Desarrollador FullStack. React js/React Native
                 </p>
             </div>
             <div
