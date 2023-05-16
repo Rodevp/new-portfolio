@@ -81,6 +81,15 @@ function Project() {
                 github: "https://github.com/Rodevp/dollar-evaluate",
                 demo: "https://dollar-evaluate.vercel.app/"
             }
+        },
+        {
+            id: 1,
+            title: "Clon twitter",
+            description: "Clone de twitter enfocado en algunas funcionalidades y UI",
+            urls: {
+                github: "https://github.com/Rodevp/twittwe-next",
+                demo: "https://vimeo.com/827326548?share=copy"
+            }
         }
     ]
 
