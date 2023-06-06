@@ -90,6 +90,15 @@ function Project() {
                 github: "https://github.com/Rodevp/twittwe-next",
                 demo: "https://vimeo.com/827326548?share=copy"
             }
+        },
+        {
+            id: 2,
+            title: "Dolar app",
+            description: "Aplicación para ver la paridad del dólar actual en COP colombiano",
+            urls: {
+                github: "https://github.com/Rodevp/dollar_stats",
+                demo: "https://dollar-stats.netlify.app"
+            }
         }
     ]
 
