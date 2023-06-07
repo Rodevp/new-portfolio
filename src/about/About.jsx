@@ -16,7 +16,7 @@ function About() {
                 className={styles.me}
                 style={{color: COLORS.purpleVeryLight}}
             >
-                Con experiencia construyendo aplicaciones web con React js, Next js y React Native.
+                Con experiencia construyendo aplicaciones Frontend con diferentes tecnologias web.
                 Me gusta experimentar y aprender sobre temas y buenas prácticas para construir aplicaciones de gran escala. 🤟
             </p>
         </section>
