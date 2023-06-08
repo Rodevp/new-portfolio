@@ -74,15 +74,6 @@ function Project() {
 
     const projects = [
         {
-            id: 0,
-            title: "Dolar hoy",
-            description: "Aplicación para ver la paridad del dolar y peso COP",
-            urls: {
-                github: "https://github.com/Rodevp/dollar-evaluate",
-                demo: "https://dollar-evaluate.vercel.app/"
-            }
-        },
-        {
             id: 1,
             title: "Clon twitter",
             description: "Clone de twitter enfocado en algunas funcionalidades y UI",
